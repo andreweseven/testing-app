@@ -11,7 +11,7 @@ class PersonServiceImpl: PersonService {
     override fun get(id: Int): Person? {
         return personList.stream().filter {
             it.id == id
-        }.findAny().orElseGet(null)
+        }.findAny().orElse(null)
     }
 
     override fun add(person: Person) {

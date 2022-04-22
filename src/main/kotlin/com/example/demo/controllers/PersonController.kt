@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*
 @RequestMapping("main")
 class PersonController() {
     @Autowired
-    val personService: PersonService? = null
+    private val personService: PersonService? = null
 
     @GetMapping("/{id}")
     fun get(@PathVariable id: Int): Person? {
