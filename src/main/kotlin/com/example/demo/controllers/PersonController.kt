@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
 
 @RestController
-@RequestMapping("main")
+@RequestMapping("person")
 class PersonController() {
     @Autowired
     private val personService: PersonService? = null
